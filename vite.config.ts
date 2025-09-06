@@ -22,6 +22,5 @@ export default defineConfig({
       }
     }
   },
-  // base: "/goose/",
-
+  base: process.env.NODE_ENV === 'production' ? '/goose/' : '/',
 });
